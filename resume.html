@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cris Asuncion - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .profile-image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .profile-image-placeholder {
+            width: 140px;
+            height: 140px;
+            border-radius: 30%;
+            background: #ecf0f1;
+            border: 5px solid rgb(3, 3, 3);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: #95a5a6;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 0;
+        }
+        
+        .sidebar {
+            background: #ecf0f1;
+            padding: 30px;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .sidebar .section-title {
+            color: #2c3e50;
+            border-bottom-color: #2c3e50;
+        }
+        
+        .info-item {
+            margin-bottom: 12px;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #2c3e50;
+            display: inline-block;
+            min-width: 120px;
+        }
+        
+        .education-item, .work-item {
+            margin-bottom: 20px;
+        }
+        
+        .education-title, .work-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .education-school, .work-company {
+            color: #555;
+            margin-bottom: 3px;
+        }
+        
+        .education-years, .work-years {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        
+        .skills-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .skills-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .skills-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .reference-item {
+            margin-bottom: 15px;
+        }
+        
+        .reference-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .reference-title {
+            color: #555;
+            font-size: 0.9em;
+        }
+        
+        .reference-contact {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        .certification {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <!-- Profile Image -->
+            <div class="profile-image-container">
+                <!-- Replace the src with your actual image path -->
+                <img src="CRIS PIC.jpg" alt="" class="profile-image">
+                <!-- If you don't have an image yet, you can use this placeholder instead -->
+                <!-- <div class="profile-image-placeholder">👤</div> -->
+            </div>
+            
+            <h1>CRIS ASUNCION</h1>
+            <div class="contact-info">
+                <p>📞 09475058580</p>
+                <p>✉️ asuncioncris029@gmail.com</p>
+                <p>📍 Purok 1, Barucboc Quezon Isabela</p>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="section">
+                    <h2 class="section-title">Personal Data</h2>
+                    <div class="info-item">
+                        <span class="info-label">Date of Birth:</span>
+                        <span>January 29, 2001</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Place of Birth:</span>
+                        <span>Quezon Isabela</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Age:</span>
+                        <span>24</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Gender:</span>
+                        <span>Male</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Civil Status:</span>
+                        <span>Single</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Citizenship:</span>
+                        <span>Filipino</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Height:</span>
+                        <span>5'7"</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Religion:</span>
+                        <span>Mormon</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Languages:</span>
+                        <span>Ilocano, Tagalog, English</span>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="skills-list">
+                        <li>Sincere and trustworthy</li>
+                        <li>Dedicated and hardworking individual</li>
+                        <li>Able to use Microsoft Office (MS Word, MS Excel, MS PowerPoint)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="content">
+                <div class="section">
+                    <h2 class="section-title">Objective</h2>
+                    <p>To work in an organization wherein I can use, enhance, and share my knowledge and skills in its progress. Gain and learn the appropriate expertise and advance in each of the skill levels so that I can provide the best service in the organization.</p>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Educational Attainment</h2>
+
+                     <div class="education-item">
+                        <div class="education-title">College</div>
+                        <div class="education-school">Mallig Plains Colleges</div>
+                        <div class="education-school">Bachelor of Science And Information Technology</div>
+                        <div class="education-years">2023 - 2027</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-title">Senior High School</div>
+                        <div class="education-school">Barucboc National High School</div>
+                        <div class="education-school">TVL/ICT</div>
+                        <div class="education-years">2019 - 2021</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-title">Secondary</div>
+                        <div class="education-school">Barucboc National High School</div>
+                        <div class="education-years">2014 - 2018</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-title">Primary</div>
+                        <div class="education-school">Siempre Viva Elementary School</div>
+                        <div class="education-years">2007 - 2013</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Work Experience</h2>
+                    
+                    <div class="work-item">
+                        <div class="work-title">Office Staff</div>
+                        <div class="work-company">Mk Visa Consultancy Inc.</div>
+                        <div class="work-years">September 2021 - Present</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Character Reference</h2>
+                    
+                    <div class="reference-item">
+                        <div class="reference-name">Jericho Pelimiano</div>
+                        <div class="reference-title">IT Department Dean</div>
+                        <div class="reference-title">Mallig Plains Colleges Inc.</div>
+                        <div class="reference-contact">📞 09263689090</div>
+                    </div>
+                </div>
+                
+                <div class="certification">
+                    <p>I hereby certify that the above information is true and correct to the best of my knowledge and belief.</p>
+                    <p style="margin-top: 20px;"><strong>CRIS ASUNCION</strong></p>
+                    <p>Applicant</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
